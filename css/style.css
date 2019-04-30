@@ -10,7 +10,9 @@
   - max-width
   - @media
 */
-
+*{
+  box-sizing: border-box;
+}
 body {
   background-color: #333;
   font: 15px/1.4 Helvetica, Arial, sans-serif;
@@ -18,6 +20,7 @@ body {
   width: 900px;
   margin:auto;
   padding: 25px 25px 50px;
+  width: 100%;
 }
 
 a {
@@ -45,6 +48,7 @@ a {
 }
 main {
   display: flex;
+ 
 }
 nav {
   background-color: #B00;
@@ -112,3 +116,28 @@ section img {
   margin-right: 15px;
   padding-right: 15px;
 }
+
+@media only screen and (max-width: 900px){
+  nav {
+   
+    margin:5%;
+    
+   /* Nav width: 25%; */
+    margin-right: 5%; 
+    
+  
+  }
+ main{ 
+ 
+  display: flex;
+  flex-direction: column;
+}
+nav ul{
+  display: flex;
+
+}
+section img {
+  float: left;
+}
+  }
+  
