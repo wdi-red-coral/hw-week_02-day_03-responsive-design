@@ -112,3 +112,76 @@ section img {
   margin-right: 15px;
   padding-right: 15px;
 }
+
+
+
+
+
+
+
+
+
+/*/////////////////////////////////////////////////////////////////*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media (min-width: 320px) and (max-width: 480px) {
+  .header {
+    width: auto;
+  }
+  nav ul{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    width: auto;
+    padding: 0
+  }
+
+  body {
+    background: yellow;
+    width: 100%;
+    padding: 0;
+    margin: 0
+  }
+  nav{
+    display: flex;
+    flex-direction: column;
+    min-width: 100%;
+  }
+  main {
+    display: flex;
+    flex-direction: column;
+    
+  }
+  
+
+  section, .page {
+    width: 100%;
+  }
+
+  img {
+    float: left;
+  }
+
+  p {
+    margin: 3px
+  }
+  a {
+    font-size: 20px;
+    font-weight: bolder
+  }
+}
+
