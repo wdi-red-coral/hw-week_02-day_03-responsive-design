@@ -1,11 +1,9 @@
 /*
   Red: #B00;
   Dark Red: #900;
-
   Max page width: 900px
   Nav width: 25%, with 5% right margin
   Main width: 65%
-
   CSS you'll need:
   - max-width
   - @media
@@ -111,4 +109,33 @@ section img {
   display: inline;
   margin-right: 15px;
   padding-right: 15px;
+}
+
+@media (max-width: 900px ){
+  body{
+    width: 90%;
+    
+  }
+  main{
+    width: 100%;
+    display: block;
+  }
+  nav{
+    width: 100%;
+    margin-right: 0%;
+  }
+  nav ul{
+    display: flex;
+    flex-direction: row;
+    margin: 0;
+    padding-left: 0;
+ 
+  }
+  section{
+    width: 90%;
+    padding: 6%;
+  }
+  section img {
+    float: left;
+  }
 }
