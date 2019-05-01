@@ -11,6 +11,8 @@
   - @media
 */
 
+
+
 body {
   background-color: #333;
   font: 15px/1.4 Helvetica, Arial, sans-serif;
@@ -18,7 +20,11 @@ body {
   width: 900px;
   margin:auto;
   padding: 25px 25px 50px;
-}
+  
+  }
+
+
+
 
 a {
   color: #C00;
@@ -40,21 +46,24 @@ a {
   text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.5);
 }
 
+
 .header img {
   width: 30%;
 }
 main {
   display: flex;
 }
+
 nav {
   background-color: #B00;
   margin: 0;
   margin-right: 5%;
   padding: 0;
-  flex-grow: 1;
   min-width: 100px;
+  flex-grow: 1;
   height: 100%;
 }
+
 
 nav ul {
   list-style: none;
@@ -65,7 +74,9 @@ nav a {
   display: block;
   font-weight: bold;
   padding: 10px 20px;
+  min-width: 65%;
 }
+
 
 nav a:hover {
   background-color: #D00;
@@ -81,6 +92,7 @@ section img {
   margin-right: 20px;
   margin-bottom: 5px;
   width: 30%;
+  
 }
 
 .breadcrumbs {
@@ -94,7 +106,6 @@ section img {
 .breadcrumbs li {
   margin: 0 10px;
 }
-
 .footer {
   background-color: #B00;
   clear: both;
@@ -111,4 +122,38 @@ section img {
   display: inline;
   margin-right: 15px;
   padding-right: 15px;
+}
+
+
+/*cahnged*/
+@media (min-width : 320px)and (max-width : 480px){
+  .header {
+    width:100%;
+  }
+  main {
+    display: flex;
+    flex-direction: row;
+  }
+  .page main .flex-container ul {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+  
+  }
+   .page nav ul {
+    display: flex ;
+      width: 100%;
+    
+  }
+  section .ul  {
+    display: flex;
+    flex-direction: row;
+  }
+  section ul img {
+    display: flex;
+    flex-shrink: inherit;
+  }
+  .footer {
+    display:none;
+  }
 }
