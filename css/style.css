@@ -112,3 +112,37 @@ section img {
   margin-right: 15px;
   padding-right: 15px;
 }
+
+@media (min-width:480px, max-width:900px) {
+  /* For mobile phones: */
+.header {
+  width:100%;
+}
+main {
+  display: flex;
+  flex-direction: row;
+}
+.page main .flex-container ul {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+
+}
+ .page nav ul {
+  display: flex ;
+    width: 100%;
+  
+}
+section .ul  {
+  display: flex;
+  flex-direction: row;
+}
+section ul img {
+  display: flex;
+  flex-shrink: inherit;
+}
+.footer {
+  display:none;
+}
+  }
+}
