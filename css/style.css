@@ -116,3 +116,13 @@ section img {
   margin-right: 15px;
   padding-right: 15px;
 }
+
+p{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  margin: 0 auto;
+}
