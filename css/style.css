@@ -15,7 +15,7 @@ body {
   background-color: #333;
   font: 15px/1.4 Helvetica, Arial, sans-serif;
   margin: 0;
-  width: 900px;
+  width: 100%;
   margin:auto;
   padding: 25px 25px 50px;
 }
@@ -58,6 +58,7 @@ nav {
 
 nav ul {
   list-style: none;
+  display: flex;
 }
 
 nav a {
@@ -111,4 +112,27 @@ section img {
   display: inline;
   margin-right: 15px;
   padding-right: 15px;
+}
+
+@media (Max-width: 900px ){
+
+  main{
+    flex-direction: column;
+    
+  }
+  nav{
+    margin-right: 5px;
+    
+  }
+  nav ul{
+    font-size: 1em;
+    padding-left: 0px;
+  }
+
+  nav li:nth-child(2){
+    border-left: 1px solid  black ;
+    border-right: 1px solid  black ;
+  }
+
+
 }
